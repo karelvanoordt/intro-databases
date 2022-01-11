@@ -70,7 +70,7 @@ SELECT * FROM animals;
 -- Group by functions in a transaction
 BEGIN;
 -- Delete animals born after Jan 1st 2022
-DELETE FROM animals WHERE date_of_birth < '2022-01-01';
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 SELECT * FROM animals;
 --  id |    name    | date_of_birth | escape_attempts | neutered | weight_kg | species 
 -- ----+------------+---------------+-----------------+----------+-----------+---------
