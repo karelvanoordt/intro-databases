@@ -249,3 +249,4 @@ GROUP BY species.name;
 --  Digimon   |     6
 --  Pokemon   |     3
 -- (2 rows)
+
