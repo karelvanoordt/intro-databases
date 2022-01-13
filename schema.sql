@@ -49,6 +49,34 @@ ADD CONSTRAINT fk_owners
 FOREIGN KEY (owner_id)
 REFERENCES owners(id);
 
+-- Create a table named vets
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name varchar(100),
+    age int,
+    date_of_graduation date
+);
+
+-- Create specializations table from species and vets
+CREATE TABLE specializations (
+    species_id int, 
+    vet_id int,
+    CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id),
+    CONSTRAINT fk_vets FOREIGN KEY(vet_id) REFERENCES vets(id)
+);
+
+-- Create visits table from animals and vets
+CREATE TABLE visits (
+    animals_id int, 
+    vet_id int,
+    visit_date date,
+    CONSTRAINT fk_animals FOREIGN KEY(animals_id) REFERENCES animals(id),
+    CONSTRAINT fk_vets FOREIGN KEY(vet_id) REFERENCES vets(id)
+);
+
+
+
+
 
 
 

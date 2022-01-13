@@ -82,8 +82,49 @@ VALUES
     -- Dean Winchester owns Angemon and Boarmon.
     UPDATE animals
     SET owner_id=5 WHERE name IN ('Angemon', 'Boarmon');
-    
+
    
+----------------DAY 4 ---------------------
+
+-- Insert the following data for vets:
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES
+('WIlliam Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17'),
+('Stephanie Mendez', 64, '1981-05-04'),
+('Jack Harness', 38, '2008-06-08');
+
+-- Insert the following data for specialties:
+INSERT INTO specializations (vet_id,species_id)
+VALUES
+(1,1),
+(3,1),
+(3,2),
+(4, 2);
+
+-- Insert the following data for visits:
+INSERT INTO visits (animals_id,vet_id,visit_date)
+VALUES
+(1, 1,'2020-05-24'),
+(1, 3,'2020-07-22'),
+(2, 4,'2021-02-02'),
+(5,2,'2020-01-05'),
+(5,2,'2020-03-04'),
+(5,2,'2020-05-14'),
+(3,3,'2021-05-04'),
+(8,4,'2021-02-24'),
+(10,2,'2019-12-21'),
+(10,1,'2020-08-10'),
+(10,2,'2021-04-07'),
+(9,3,'2019-09-29'),
+(7,4,'2020-10-03'),
+(7,4,'2020-11-04'),
+(4,2,'2019-01-24'),
+(4,2,'2019-05-15'),
+(4,2,'2020-02-27'),
+(4,2,'2020-08-03'),
+(6,3,'2020-05-24'),
+(6,1,'2021-01-11');
 
 
 
