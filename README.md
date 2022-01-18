@@ -1,6 +1,8 @@
 # Intro Databases
 
-This project lists 4 different files that store configuration, queries and transactions of a custom database designed for a vet clinic.
+This project lists 5 different files that store configuration, queries and transactions of a custom database designed for a vet clinic.
+
+(./db-diagram.png)
 
 
 ## Getting Started
